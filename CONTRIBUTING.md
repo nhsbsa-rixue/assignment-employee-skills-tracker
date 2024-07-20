@@ -1,6 +1,6 @@
-# Contributing to {project name}
+# Contributing to employee-skills-tracker
 
-{project name} is released under the [Apache 2 license](LICENCE.txt). If you would like to contribute
+employee-skills-tracker is released under the [Apache 2 license](LICENCE.txt). If you would like to contribute
 something, or simply want to hack on the code this document should help you get started.
 
 ## Code of Conduct
