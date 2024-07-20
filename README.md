@@ -12,25 +12,24 @@ A personal assignment to create a RESTful web service to track skills within an 
   npm install
   ```
 2. Build the app 
-   ```
-   npm run build
-   ```
+  ```
+  npm run build
+  ```
 
 ### Running the application
 There are two ways to run this applicatioin locally
-1. As a native express application
+1. Run as a native express application
 
 ```
 npm run dev
 ```
-This application then expose two RESTful endpoints: skills and employees
+Then the application can be invoked though those two RESTful endpoints: skills and employees
 
-1. `http://localhost:8000/skills`
-
-2. `http://localhost:8000/employees`
-
+* `http://localhost:8000/skills`
+* `http://localhost:8000/employees`
 
 2. Though [LocalStack](https://www.localstack.cloud/)
+   
    2.1 Install tflocal 
    ```
    pip install terraform-local
@@ -46,11 +45,11 @@ This application then expose two RESTful endpoints: skills and employees
    npm run tflocal-apply
    ``` 
 
-   2.4 Invoke the endpoint provided by the localstack, instead of `http://localhost:8000/skills`
-   e.g.
+   2.4 Invoke the endpoint provided by the localstack. e.g.
    ```
    http://kvxzjjcr8pzxw79m2fkbhcuai3godrju.lambda-url.eu-west-2.localhost.localstack.cloud:4566/skills
    ```
+  Instead of `http://localhost:8000/skills`
 
 ## Libraries
 
