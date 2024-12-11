@@ -7,6 +7,7 @@
     "preinstall": "node -e \"process.platform === 'darwin' && require('child_process').spawn('sh', ['./npm_scripts/install_pre_commit.sh'], { stdio: 'inherit'})\" && node -e \"process.platform === 'win32' && require('child_process').spawn('cmd.exe', ['/c','call npm_scripts/install_pre_commit.bat'], { stdio: 'inherit'})\"",
     "postinstall": "npm run build",
     "build": "rimraf ./dist && tsc",
+    "esbuild": "rimraf ./dist && npx ts-node build.ts",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "validate": "npm run eslint && npm run audit && npm run test",
